@@ -58,6 +58,7 @@ and `\mathbb{R}` is `ℝ`. Greek scripts outside Unicode's small set (`L_θ`,
 |---|---|
 | `core/` | Converter (`convert.ts`), Markdown scanner (`markdown.ts`), and CLI (`cli.ts`) |
 | `claude/` | Claude Code plugin; see [its README](claude/README.md) |
+| `pi/` | Pi extension; see [its README](pi/README.md) |
 
 The Markdown scanner finds math in replies while they stream: inline `$…$`
 and `\(…\)`, display `$$…$$` and `\[…\]`, and top-level environments. It

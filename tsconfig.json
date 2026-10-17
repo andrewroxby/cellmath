@@ -12,6 +12,7 @@
     ]
   },
   "include": [
-    "core"
+    "core",
+    "pi"
   ]
 }

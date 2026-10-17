@@ -1,7 +1,7 @@
 {
   "name": "cellmath",
   "version": "0.1.0",
-  "description": "LaTeX set into terminal cells: Unicode text, script glyphs, and image placeholders",
+  "description": "LaTeX set into terminal cells as Unicode, for coding agents and terminal editors",
   "license": "MIT",
   "private": true,
   "type": "module",
@@ -9,8 +9,8 @@
     "cellmath": "core/cli.ts"
   },
   "scripts": {
-    "test": "npm run typecheck && node --test 'core/**/*.test.ts' && npm run build && claude plugin test claude",
-    "test:core": "node --test 'core/**/*.test.ts'",
+    "test": "npm run typecheck && node --test 'core/**/*.test.ts' 'pi/**/*.test.ts' && npm run build && claude plugin test claude",
+    "test:core": "node --test 'core/**/*.test.ts' 'pi/**/*.test.ts'",
     "typecheck": "tsc -p tsconfig.json",
     "build": "esbuild core/index.ts --bundle --format=esm --platform=neutral --outfile=claude/hooks/cellmath.js --log-level=warning"
   },
