@@ -1,0 +1,12 @@
+{
+  "name": "cellmath",
+  "description": "cellmath for Claude Code",
+  "owner": { "name": "Andrew Roxby" },
+  "plugins": [
+    {
+      "name": "cellmath",
+      "source": "./claude",
+      "description": "Render LaTeX in Claude Code replies as Unicode math"
+    }
+  ]
+}
